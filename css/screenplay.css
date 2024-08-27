@@ -54,8 +54,6 @@
  	font-family: "Courier", "Courier New", monospace;
  	font-size: 1.2em;
  	padding: 0;
-	width: 1275px;
-	height: 1650px;
 	outline: 1px dotted gray;
  }
 
@@ -168,32 +166,4 @@
 	text-align: right;
 	text-indent: 0;
 	text-transform: uppercase;
-}
-
-@media print {
-	body {
-		margin-left: 1.5in;
-		margin-right: .75in;
-
-		/***
-		 * Setting the top and bottom margins to 0, as web browsers don't apply
-		 * this to each page individually (better to let the user specify a
-		 * custom top and bottom margin upon printing the document).
-		 **/
-
-		margin-bottom: 0;
-		margin-top: 0;
-	}
-
-	.titlepage {
-		margin-top: 2in;
-	}
-
-	.author {
-		margin-bottom: 1in;
-	}
-
-	.titlepagebottom {
-		margin-top: 3in;
-	}
 }
